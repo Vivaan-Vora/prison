@@ -17,7 +17,7 @@ public class gamelogic {
                 input = Integer.parseInt(sc.next());
             }catch(Exception e){
                 input = -1;
-                System.out.println("enter an integer");
+                System.out.println("Enter an integer");
             }
         }while(input < 1 || input > userchoice);
         return input;
@@ -38,7 +38,7 @@ public class gamelogic {
         print(30);
     }
     public static void presstocontinue(){
-        System.out.println("\n enter anything to continue...");
+        System.out.println("\n Enter anything to continue...");
         sc.next();
     }
     public static void StartGame() {
@@ -48,20 +48,20 @@ public class gamelogic {
         clearconsole();
         print(40);
         print(30);
-        System.out.println("JAIL BREAK");
+        System.out.println("Greetings Criminal, welcome to JAIL BREAK");
         print(30);
         print(40);
         presstocontinue();
         do {
             clearconsole();
 
-            heading("what is your name and ID?");
+            heading("What is your name and ID?");
             name = sc.next();
             ID = sc.nextInt();
             clearconsole();
-            heading("is your name " + name + "?");
-            System.out.println("(1) yes");
-            System.out.println("(2) no");
+            heading("Is your name " + name + "?");
+            System.out.println("(1) Yes");
+            System.out.println("(2) No");
             int input = readint("-->", 2);
             if (input == 1) {
                 nameset = true;
@@ -85,11 +85,11 @@ public class gamelogic {
     public static void printMenu(){
         clearconsole();
         heading("MENU");
-        System.out.println("choose an action");
+        System.out.println("Choose an action");
         print(20);
-        System.out.println("(1) continue");
-        System.out.println("(2) player info ");
-        System.out.println("(3) exit");
+        System.out.println("(1) Continue");
+        System.out.println("(2) Player Info ");
+        System.out.println("(3) Exit");
     }
 
     public static void playerInfo(){
